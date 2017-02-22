@@ -1,4 +1,9 @@
 
+# do not track changes to reconnect.sql
+# initial file has scott/tiger - changes will have real passwords
+
+reconnect.sql
+
 ces.sql
 des.sql
 ses.sql
