@@ -2,5 +2,5 @@
 
 -- reconnect.sql
 
-connect jkstill/grok@oravm
+connect scott/tiger@orcl
 
