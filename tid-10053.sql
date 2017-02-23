@@ -18,7 +18,8 @@ select username traceowner from v$process where pname = 'PMON';
 select host_name tracehost from v$instance;
 
 -- set tracefile identifier
-alter session set tracefile_identifier = '12c-10053-METHOD_OPT';
+--alter session set tracefile_identifier = '10053-METHOD_OPT';
+alter session set tracefile_identifier = '10053-CREATE_EXTENDED';
 
 select value tracefile from v$diag_info where name = 'Default Trace File';
 
@@ -40,8 +41,6 @@ alter session set events '10053 trace name context off';
 -- now get the trace file, or other processing
 
 @@scp '&&traceowner@&&tracehost:&&tracefile' './trace'
-
-
 
 
 

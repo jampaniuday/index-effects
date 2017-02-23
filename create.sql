@@ -14,6 +14,7 @@ from dual
 connect by level <= 10000
 /
 
+--exec dbms_stats.gather_table_stats(null,'INDEX_EFFECTS',method_opt=>'for all columns size 1')
 exec dbms_stats.gather_table_stats(null,'INDEX_EFFECTS',method_opt=>'for all columns size 1 for columns size 254 N1 N2 N3')
 --exec dbms_stats.gather_table_stats(null,'INDEX_EFFECTS',method_opt=>'for all columns size 1 for columns size 254 N1 N2 N3 (N1,N2,N3)')
 
