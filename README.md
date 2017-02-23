@@ -503,6 +503,8 @@ Extended statistics created via dbms_stats.create_extended_stats are incomplete.
 
 It is best to use the method_opt method to create extended statistics (column groups)
 
+These tests have also been performed on 12.1.0.2 with the same results, that is, when extended statistics are created with dbms_stats.create_extended_stats, the optimizer will use default values for the column group.
+
 <h3>To Do</h3>
 
 - Construct a test case such that the inaccurate cardinality causes the optimizer to choose a poor execution plan
