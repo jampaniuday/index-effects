@@ -63,6 +63,8 @@ PL/SQL procedure successfully completed.
 
 These stats also show up as a virtual column:
 
+<blockquote style='border: 2px solid #000;background-color:#D8D8D8;color:#0B0B61; white-space: pre-wrap;'>
+<pre><code><i>
 
 SQL# @virtual-columns
 
@@ -70,6 +72,8 @@ COLUMN
 ------------------------------
 SYS_STUOYQUEIAZ7FI9DV53VLN$$$0
 
+</i></code></pre>
+</blockquote>
 
 Now check in dba_tab_col_statistics
 
