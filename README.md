@@ -5,13 +5,40 @@ The Oracle optimizer uses columns from indexes to create associations base on th
 
 Questions:
 
-1), does marking an index invisible completely hide it from the optimizer?
-2), if an index is dropped, causing the optimize to mis-estimate the cardinalities will extended statistics put it back on track?
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
-<table class="tableizer-table">
-<thead><tr class="tableizer-firstrow"><th>1)</th><th> does marking an index invisible completely hide it from the optimizer?</th></tr></thead><tbody>
- <tr><td>2)</td><td> if an index is dropped  causing the optimize to mis-estimate the cardinalities will extended statistics put it back on track?</td></tr>
-</tbody></table>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Q#</th>
+    <th>Question</th>
+  </tr>
+  <tr>
+    <td>#1</td>
+    <td>does marking an index invisible completely hide it from the optimizer?</td>
+  </tr>
+  <tr>
+    <td>#2</td>
+    <td>if an index is dropped  causing the optimize to mis-estimate the cardinalities will extended statistics put it back on track</td>
+  </tr>
+</table>
 
 Those are the 2 questions I started of with. 
 
